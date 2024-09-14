@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product Store</title>
+</head>
+<body>
+    <div id="orderBy">
+        <h3>Order by :</h3>
+        <button onclick="orderByPrice()" id="prix">
+            Prix
+        </button>
+        <button onclick="orderByLibelle()" id="prix">
+            Libelle
+        </button>
+    </div>
+    <main>
+        <div id="form">
+             <h1>Product Filter</h1>
+             <hr>
+            <input placeholder="Nom d'produit" type="text" id="libelle">
+            <input placeholder="Description" type="text" id="description">
+            <div id="priceContainer">
+                <input placeholder="Prix de :" type="text" id="De">
+                <input placeholder="A" type="text" id="A">
+            </div>
+            <div id="err"> Choose at least one criteria</div>
+            <button onclick="filter()">
+                Filter <span><img src="img/edit.png" width="20px" alt="not found"></span>
+            </button>
+        </div>
+        
+        <div id="productContainer">
+        
+        </div>
+        
+    </main>
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
